@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Video</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer src="postVideo.js"></script>
+    <script defer src="/public/validation.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Register</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/login.html">Login</a></li>
+                <li><a href="/postvideo.html">Post Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Registration Form</h2>
+            <form id="registrationForm" action="http://localhost:3000/users/register" method="post" onsubmit="return validateForm()">
+
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br>
+                <label for="confirm-password">Confirm Password:</label><br>
+                <input type="password" id="confirm-password" name="confirm_password" required><br>
+                <label for="agecheck">I am 13 years old or older</label>
+                <input type="checkbox" id="agecheck" name="age_verification" required><br>
+                <label for="tos">I accept the <a href="/tos.html">TOS and Privacy Rules</a></label>
+                <input type="checkbox" id="tos" name="tos_acceptance" required><br>
+                <input type="submit" value="Register">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Website made by <strong>Andre Achtar-Zadeh</strong></p>
+    </footer>
+</body>
+</html>

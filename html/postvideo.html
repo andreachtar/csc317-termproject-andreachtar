@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post Video</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer src="postVideo.js"></script> <!-- Add the path to your JavaScript file here -->
+</head>
+<body>
+    <header>
+        <h1>Post a Video</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Video Form</h2>
+        <form id="postVideoForm" onsubmit="return validateVideoForm()"> <!-- Added onsubmit attribute here -->
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" required><br>
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description" required></textarea><br>
+            <label for="video">Video:</label><br>
+            <input type="file" id="video" name="video" accept="video/*" required><br>
+            <label for="usepolicy">I accept the Acceptable Use Policy for uploading videos</label>
+            <input type="checkbox" id="usepolicy" name="usepolicy_acceptance" required><br>
+            <input type="submit" value="Post Video">
+        </form>
+    </main>
+
+    <footer>
+        <p>Website made by Andre Achtar-Zadeh</p>
+    </footer>
+</body>
+</html>

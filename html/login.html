@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post Video</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer src="postVideo.js"></script>
+    <script defer src="/public/loginValidation.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/registration.html">Register</a></li>
+                <li><a href="/postvideo.html">Post Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Login Form</h2>
+        <form id="loginForm" action="/users/login" method="post" onsubmit="return validateLoginForm()">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="password" required><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <p>Website made by Andre Achtar-Zadeh</p>
+    </footer>
+</body>
+</html>
+
